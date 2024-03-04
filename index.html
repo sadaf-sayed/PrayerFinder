@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>  DUA!!! </title>
+<div class = "container" style="background-color: rgb(122, 156, 172); padding-top: 10px;" > 
+<head> <h1 style="text-align: center; font-family: Courier New; font-size: 32px; margin-top: 10px; padding-bottom: 15px;"> <b> WHAT DUA ARE YOU IN NEED FOR? 
+</h1> </b> </head>
+
+
+</div>
+
+
+<body style ="background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/02/18/Abstract-pastel-color-background-design-Graphics-61598226-1.jpg');">
+    <button id="study" type="button" style="background-color: rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Studying </button>
+
+    <button id="exam" type="button" style="background-color: rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Exam </button>
+
+    <button id="health" type="button" style="background-color: rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Health </button>
+
+
+
+
+     <button id="ease" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Ease </button>
+
+     <button id="anxiety" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Anxiety </button>
+
+     <button id="procrastination" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Procrastination  </button>
+     <button id="rain" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For When it Rains </button>
+     <button id="forgiveness" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Seeking Forgiveness </button>
+
+     <button id="success" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Success </button>
+    
+     <button id="distress" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For When Distressed </button>
+
+     <button id="wealth" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Wealth </button>
+
+     <button id="peace" type="button" style="background-color:  rgb(80, 121, 142); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='rgb(62, 95, 111)'" onmouseout="this.style.backgroundColor='rgb(80, 121, 142)'"> For Peace </button>
+
+
+<button id="home" type="button" hidden="true" style="width: 90px; height: 90px;background-image: url('https://i.pinimg.com/1200x/7f/49/82/7f49826b0beff5771dce4aad8ff05d0c.jpg'); background-size: 130%; background-position: center; "  > </button>
+    
+
+    <label id = dua type="label" hidden="true">  </label>
+    <label id = translit type="label" hidden="true">  </label>
+    <label id = translat type="label" hidden="true">  </label>
+
+    
+
+   
+   
+    
+</body>
+
+<script>
+    const study = document.getElementById("study");
+    study.style.height = "350px";
+    study.style.width = "350px";
+    study.style.borderRadius = "15px";
+    study.style.fontSize="30px";
+    study.style.fontFamily="Calibri";
+
+    const exam = document.getElementById("exam");
+    exam.style.height = "350px";
+    exam.style.width = "350px";
+    exam.style.borderRadius = "15px";
+    exam.style.fontSize="30px";
+    exam.style.fontFamily="Calibri";
+
+    const health = document.getElementById("health");
+    health.style.height = "350px";
+    health.style.width = "350px";
+    health.style.borderRadius = "15px";
+    health.style.fontSize="30px";
+    health.style.fontFamily="Calibri";
+
+    const ease = document.getElementById("ease");
+    ease.style.height = "350px";
+    ease.style.width = "350px";
+    ease.style.borderRadius = "15px";
+    ease.style.fontSize="30px";
+    ease.style.fontFamily="Calibri";
+
+    const anxiety = document.getElementById("anxiety");
+    anxiety.style.height = "350px";
+    anxiety.style.width = "350px";
+    anxiety.style.borderRadius = "15px";
+    anxiety.style.fontSize="30px";
+    anxiety.style.fontFamily="Calibri";
+    anxiety.style.position= "relative"; //to make space bw rows
+    anxiety.style.top="10px"; /////////////^^^^
+
+    const procrastination = document.getElementById("procrastination");
+    procrastination.style.height = "350px";
+    procrastination.style.width = "350px";
+    procrastination.style.borderRadius = "15px";
+    procrastination.style.fontSize="30px";
+    procrastination.style.fontFamily="Calibri";
+    procrastination.style.position= "relative"; //to make space bw rows
+    procrastination.style.top="10px"; /////////////^^^^
+
+    const rain = document.getElementById("rain");
+    rain.style.height = "350px";
+    rain.style.width = "350px";
+    rain.style.borderRadius = "15px";
+    rain.style.fontSize="30px";
+    rain.style.fontFamily="Calibri";
+    rain.style.position= "relative"; //to make space bw rows
+    rain.style.top="10px"; /////////////^^^^
+
+    const forgiveness = document.getElementById("forgiveness");
+    forgiveness.style.height = "350px";
+    forgiveness.style.width = "350px";
+    forgiveness.style.borderRadius = "15px";
+    forgiveness.style.fontSize="30px";
+    forgiveness.style.fontFamily="Calibri";
+    forgiveness.style.position= "relative"; //to make space bw rows
+    forgiveness.style.top="10px"; /////////////^^^^
+
+    const success = document.getElementById("success");
+    success.style.height = "350px";
+    success.style.width = "350px";
+    success.style.borderRadius = "15px";
+    success.style.fontSize="30px";
+    success.style.fontFamily="Calibri";
+    success.style.position= "relative"; //to make space bw rows
+    success.style.top="20px"; /////////////^^^^
+
+
+    const distress = document.getElementById("distress");
+    distress.style.height = "350px";
+    distress.style.width = "350px";
+    distress.style.borderRadius = "15px";
+    distress.style.fontSize="30px";
+    distress.style.fontFamily="Calibri";
+    distress.style.position= "relative"; //to make space bw rows
+    distress.style.top="20px"; /////////////^^^^
+
+    const wealth = document.getElementById("wealth");
+    wealth.style.height = "350px";
+    wealth.style.width = "350px";
+    wealth.style.borderRadius = "15px";
+    wealth.style.fontSize="30px";
+    wealth.style.fontFamily="Calibri";
+    wealth.style.position= "relative"; //to make space bw rows
+    wealth.style.top="20px"; /////////////^^^^
+
+
+
+    const peace = document.getElementById("peace");
+    peace.style.height = "350px";
+    peace.style.width = "350px";
+    peace.style.borderRadius = "15px";
+    peace.style.fontSize="30px";
+    peace.style.fontFamily="Calibri";
+    peace.style.position= "relative"; //to make space bw rows
+    peace.style.top="20px"; /////////////^^^^
+    peace.style.marginBlockEnd = "20px";
+
+
+
+
+    const home = document.getElementById("home");
+    home.style.position= "relative";
+    home.style.top="605px";
+    home.style.left="671px";
+   
+   
+
+   
+    const dua = document.getElementById("dua");
+    const translit = document.getElementById("translit");
+    const translat = document.getElementById("translat");
+
+
+    
+    study.addEventListener("click", function(e){
+        home.hidden = false; //removeAttribute("hidden");
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+        
+        //dua.innerHTML = "ربِّ زِدْنِي عِلْماً"; //REPLACE WITH DUA 
+        dua.textContent = "ربِّ زِدْنِي عِلْماً";
+        dua.style.position= "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top="100px";
+        dua.style.left="490px";
+        
+
+        translit.textContent = "Rabbi Zidni Ilma";
+        translit.style.position= "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top="200px";
+        translit.style.left="300px";
+
+        translat.textContent = "\"O my Lord, increase me in knowledge!\”";
+        translat.style.position= "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top="250px";
+        translat.style.left="60px";
+        translat.style.fontWeight = "Bold";
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+        
+       
+
+    });
+
+    exam.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+        dua.textContent = "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="75px";
+       
+
+        translit.textContent = "Allahumma la sahla illa ma ja'altahu sahlan, wa 'anta taj'alul hazna idha shi'ta sahlan"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="400px";
+        translit.style.whiteSpace = "nowrap";
+        
+
+        translat.textContent = "\"Oh Allah, nothing is easy except what You have made easy. If You wish, You can make the difficult easy\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="275px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+
+        
+
+        //translat.style.textAlign = "center";
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+    });
+
+    health.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+        dua.textContent = "اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "40px";
+        dua.style.top = "100px";
+        dua.style.left="1px";
+        dua.style.whiteSpace = "nowrap";
+
+        translit.textContent = "Allahumma 'Aafinee fee badani, Allahumma 'Aafinee fee sam'ee, Allahumma 'Aafinee fee basari, La ilaha illa Anta"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="250px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"O Allah, make me healthy in my body. O Allah, preserve for me my hearing. O Allah, preserve for me my sight. There is none worthy of worship but You.\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="50px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+
+
+
+       
+       
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+       
+    });
+
+
+
+
+    ease.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+
+
+        dua.textContent = "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="75px";
+       
+
+        translit.textContent = "Allahumma la sahla illa ma ja'altahu sahlan, wa 'anta taj'alul hazna idha shi'ta sahlan"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="400px";
+        translit.style.whiteSpace = "nowrap";
+        
+
+        translat.textContent = "\"Oh Allah, nothing is easy except what You have made easy. If You wish, You can make the difficult easy\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="275px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+
+
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+        
+
+
+
+
+
+
+
+
+    });
+
+    anxiety.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+        dua.textContent = "x7 حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="100px";
+
+        translit.textContent = "Ḥasbiya Allāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa-huwa rabbu al-ʿarshi al-ʿaẓīm"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="400px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"Allah is enough for me. There is no true god but Him, in Him I put my trust, and He is the Lord of the Great Throne.\" (Repeat seven times)";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="110px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+        
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+   
+    procrastination.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+
+
+        dua.textContent = "اَللَّھُمَ بَارِك لِی فِی أَوقَاتِی"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="400px";
+        dua.style.whiteSpace = "nowrap";
+
+        translit.textContent = "Allahumma barik li fi auqati"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="75px";
+        translit.style.whiteSpace = "nowrap";
+
+
+        translat.textContent = "\"Oh Allah! Bless my time.\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left= "-158px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+    
+
+
+
+       
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+
+
+
+    });
+
+    rain.addEventListener("click", function(e){
+        
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+
+
+        dua.textContent = "اللَّهُمَّ صَيِّبًا نَافِعًا"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="475px";
+        dua.style.whiteSpace = "nowrap";
+
+
+
+        translit.textContent = "Allahumma soyyiban naafi’an";
+        translit.style.position= "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top="200px";
+        translit.style.left="215px";
+
+        translat.textContent = "\"O Allah, make it a beneficial rain.\”";
+        translat.style.position= "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top="250px";
+        translat.style.left="-60px";
+        translat.style.fontWeight = "Bold";
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+
+
+    });
+
+    forgiveness.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+       
+                                             
+        dua.textContent = "لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="260px";
+        dua.style.whiteSpace = "nowrap";
+
+
+
+        translit.textContent = "La ilaha illa Anta Subhanaka Inni Kuntu Minaz Zalimin";
+        translit.style.position= "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top="210px";
+        translit.style.left="-330px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"There is no God save Thee. Be Thou glorified! Lo! I have been a wrong-doer.\”";
+        translat.style.position= "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top="240px";
+        translat.style.left="380px";
+        translat.style.fontWeight = "Bold";
+        translat.style.whiteSpace = "nowrap";
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+    success.addEventListener("click", function(e){
+       home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+        dua.textContent = "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَ فِي الآخِرَةِ حَسَنَةً وَ قِنَا عَذَابَ النَّارِ"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="100px";
+
+        translit.textContent = "Rabbana atina fiddunia hasanatan wa fil aakhirati hasanatan wa qina ‘azabannar"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="400px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="110px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+
+        
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+
+    distress.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+
+        dua.textContent = "اللَّهُمَّ رَحْمَتَكَ أَرْجُو فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ وَأَصْلِحْ لِي شَأْنِي كُلَّهُ لَا إِلَهَ إِلَا أَنْتَ";//REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "40px";
+        dua.style.top = "100px";
+        dua.style.left="50px";
+        dua.style.whiteSpace = "nowrap";
+
+        translit.textContent = "Allahumma rahmataka arju fala takilni ila nafsi tarfata ‘aynin wa aslih li sha’ni kullahu la ilaha ila anta"; 
+        translit.style.position = "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top = "180px";
+        translit.style.left="300px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"O Allah, I hope for Your mercy. Do not leave me to myself even for a blink of an eye. Correct all of my affairs for me. There is none worthy of worship except You.\"";
+        translat.style.position = "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top = "230px";
+        translat.style.left="15px";
+        translat.style.whiteSpace = "nowrap";
+        translat.style.fontWeight = "Bold";
+        
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+
+
+    wealth.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+       
+                                             
+        dua.textContent = "َاَللَّهُمَّ اِغْفِرْ لِي وَارْحَمْنِي وَاهْدِنِي وَعَافِنِي وَارْزُقْنِي"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "50px";
+        dua.style.top = "100px";
+        dua.style.left="215px";
+        dua.style.whiteSpace = "nowrap";
+
+
+
+        translit.textContent = "Allahumma-ighfir li, warhamni, wa-hdini, wa ‘afini, warzuqni";
+        translit.style.position= "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top="210px";
+        translit.style.left="-400px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"O Allah! Forgive me, have mercy on me, guide me, guard me against harm and provide me with sustenance and salvation.\”";
+        translat.style.position= "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top="240px";
+        translat.style.left="190px";
+        translat.style.fontWeight = "Bold";
+        translat.style.whiteSpace = "nowrap";
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+
+
+    peace.addEventListener("click", function(e){
+        home.hidden = false;
+        study.hidden = true;
+        exam.hidden = true;
+        health.hidden = true;
+        ease.hidden = true;
+        anxiety.hidden = true;
+        procrastination.hidden = true;
+        rain.hidden = true;
+        forgiveness.hidden = true;
+        success.hidden = true;
+        distress.hidden = true;
+        wealth.hidden = true;
+        peace.hidden = true;
+       
+                                             
+        dua.textContent = "اَللّٰهُمَ اٰمِنَّا فِي أَوْطَانِنَا، وَأَدِمْ نِعْمَةَ الأَمْنِ وَالاسْتِقْرِارِ فِي بِلادِنَا بِرَحْمَتِكَ يَا أرْحَمَ الرَّاحِمِينَ"; //REPLACE WITH DUA 
+        dua.style.position = "relative";
+        dua.style.fontSize = "40px";
+        dua.style.top = "100px";
+        dua.style.left="40px";
+        dua.style.whiteSpace = "nowrap";
+
+
+
+        translit.textContent = "Allahumma aminna fi awtanina, wa adim ni’matal-amni wal-istiqrari fi biladina bi rahmatika ya arhamar-rahimeen";
+        translit.style.position= "relative";
+        translit.style.fontSize = "20px";
+        translit.style.top="180px";
+        translit.style.left="250px";
+        translit.style.whiteSpace = "nowrap";
+
+        translat.textContent = "\"O Allah! Grant us security in our lands, and continue to bless us with peace and settlement there. With Your Mercy, O Most Merciful!\”";
+        translat.style.position= "relative";
+        translat.style.fontSize = "20px";
+        translat.style.top="230px";
+        translat.style.left="135px";
+        translat.style.fontWeight = "Bold";
+        translat.style.whiteSpace = "nowrap";
+
+
+
+        dua.hidden = false;
+        translit.hidden = false;
+        translat.hidden = false;
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+    home.addEventListener("click", function(e){
+        home.hidden = true;
+        study.hidden = false;
+        exam.hidden = false;
+        health.hidden = false;
+        ease.hidden = false;
+        anxiety.hidden = false;
+        procrastination.hidden = false;
+        rain.hidden = false;
+        forgiveness.hidden = false;
+        success.hidden = false;
+        distress.hidden = false;
+        wealth.hidden = false;
+        peace.hidden = false;
+        
+        dua.textContent = "";
+        dua.style.position= "";
+        dua.style.fontSize = "";
+        dua.style.top="";
+        dua.style.left="";
+        dua.style.whiteSpace = "";
+
+
+        translit.textContent = "";
+        translit.style.position= "";
+        translit.style.fontSize = "";
+        translit.style.top="";
+        translit.style.left="";
+        translit.style.whiteSpace = "";
+
+       
+        translat.textContent = "";
+        translat.style.position= "";
+        translat.style.fontSize = "";
+        translat.style.top="";
+        translat.style.left="";
+        translat.style.fontWeight = "";
+        translat.style.whiteSpace = "";
+
+        
+        //translit.hidden = true;
+        //translat.hidden = true;
+        
+        
+    });
+
+</script>
+
+
+
+
+</html>
+
+
+
+
+
+
+
